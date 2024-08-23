@@ -16,15 +16,9 @@ As seguintes tecnologias foram usadas no projeto
 
 ```bash
 
-
-
 git clone https://github.com/seu-usuario/chat-api.git
 
-
-
 cd chat-api
-
-
 
 ```
 
@@ -32,11 +26,7 @@ cd chat-api
 
 ```
 
-
-
 bundle install
-
-
 
 ```
 
@@ -46,11 +36,7 @@ Crie e migre o banco de dados:
 
 ```bash
 
-
-
 rails db:create db:migrate
-
-
 
 ```
 
@@ -60,11 +46,7 @@ O ActionCable utiliza Redis para gerenciar as conexões. Certifique-se de que o 
 
 ```bash
 
-
-
 redis-server
-
-
 
 ```
 
@@ -74,11 +56,7 @@ Inicie o servidor Rails:
 
 ```bash
 
-
-
 rails s
-
-
 
 ```
 
@@ -92,11 +70,7 @@ Use uma ferramenta como wscat para se conectar ao WebSocket:
 
 ```bash
 
-
-
 wscat -c ws://localhost:3000/cable
-
-
 
 ```
 
@@ -134,10 +108,6 @@ Após se inscrever no canal, você receberá mensagens em tempo real:
 
 ```json
 
-
-
 < {"message":"Hello, World!"}
-
-
 
 ```
