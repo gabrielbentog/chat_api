@@ -34,8 +34,8 @@ Rails.application.configure do
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
-  # config.action_cable.url = "wss://example.com/cable"
-  # config.action_cable.allowed_request_origins = [ "http://example.com", /http:\/\/example.*/ ]
+  config.action_cable.url = "ws://localhost:3000/cable"
+  config.action_cable.allowed_request_origins = [ 'http://localhost:3000', 'http://127.0.0.1:3000', /http:\/\/localhost:\d+/ ]
 
   # Assume all access to the app is happening through a SSL-terminating reverse proxy.
   # Can be used together with config.force_ssl for Strict-Transport-Security and secure cookies.
