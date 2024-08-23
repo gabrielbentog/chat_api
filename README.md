@@ -1,22 +1,30 @@
-# Chat API com Rails e ActionCable
+# :speech_balloon: Chat API com Rails e ActionCable
 
 Esta é uma API de chat simples construída com Ruby on Rails, utilizando o ActionCable para comunicação em tempo real via WebSockets. O objetivo é permitir que clientes se inscrevam em canais e recebam mensagens em tempo real.
 
-## Requisitos
+## :clipboard: Requisitos
 
-- Ruby 3.1.0 ou superior
-- Rails 7.0 ou superior
-- PostgreSQL
+As seguintes tecnologias foram usadas no projeto
 
-## Configuração
+- [Ruby (3.3.4)](https://www.ruby-lang.org/pt/)
+
+- [Postgresql (16.2)](https://www.postgresql.org/)
+
+## :gear: Configuração
 
 ### 1. Clone o repositório
 
 ```bash
 
+
+
 git clone https://github.com/seu-usuario/chat-api.git
 
+
+
 cd chat-api
+
+
 
 ```
 
@@ -24,7 +32,11 @@ cd chat-api
 
 ```
 
+
+
 bundle install
+
+
 
 ```
 
@@ -34,7 +46,11 @@ Crie e migre o banco de dados:
 
 ```bash
 
+
+
 rails db:create db:migrate
+
+
 
 ```
 
@@ -44,7 +60,11 @@ O ActionCable utiliza Redis para gerenciar as conexões. Certifique-se de que o 
 
 ```bash
 
+
+
 redis-server
+
+
 
 ```
 
@@ -54,13 +74,17 @@ Inicie o servidor Rails:
 
 ```bash
 
+
+
 rails s
+
+
 
 ```
 
 Agora, a API estará disponível em http://localhost:3000.
 
-## Utilização
+## :rocket: Utilização
 
 ### 1. Conectar ao WebSocket
 
@@ -68,7 +92,11 @@ Use uma ferramenta como wscat para se conectar ao WebSocket:
 
 ```bash
 
+
+
 wscat -c ws://localhost:3000/cable
+
+
 
 ```
 
@@ -85,6 +113,7 @@ Para começar a receber mensagens, inscreva-se em um canal:
 ### 3. Enviar Mensagens via API
 
 Você pode enviar uma mensagem para o canal utilizando um cliente HTTP como o Postman ou curl.
+
 Exemplo com postman:
 
 ```json
@@ -105,6 +134,10 @@ Após se inscrever no canal, você receberá mensagens em tempo real:
 
 ```json
 
+
+
 < {"message":"Hello, World!"}
+
+
 
 ```
