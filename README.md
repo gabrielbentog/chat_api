@@ -66,7 +66,7 @@ Agora, a API estará disponível em http://localhost:3000.
 
 ### 1. Conectar ao WebSocket
 
-Use uma ferramenta como wscat para se conectar ao WebSocket:
+Use uma ferramenta como [wscat](https://github.com/websockets/wscat) para se conectar ao WebSocket:
 
 ```bash
 
